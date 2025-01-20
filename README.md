@@ -17,6 +17,11 @@ Este repositório contém o código-fonte da **Página de Captura de Patrocínio
 - **Brindes Exclusivos**: Vantagens para patrocinadores, como itens personalizados.
 - **Ação Direta**: Botões para patrocínios em diferentes plataformas.
 
+## 📋 Observação Importante
+
+Caso você queira utilizar este código, **lembre-se de alterar os links das tags `<a>`** no arquivo `index.html` para direcionar aos seus próprios perfis, páginas de patrocínio ou redes sociais.
+
+
 ## 📂 Estrutura de Arquivos
 ├── index.html ├── estilos/ │ └── estilos.css ├── assets/ │ ├── Background.png │ ├── Combo.png │ ├── Plataformas.png │ ├── brindes.png │ ├── telas.png │ ├── tv.png │ ├── computador.png │ ├── celular.png │ ├── logo.png │ └── Behance.png
 
