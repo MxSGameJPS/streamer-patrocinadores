@@ -145,7 +145,7 @@ body {
     background-image: url(/assets/mxsgamejps\ 1.png);
     background-size: contain;
     text-align: center;
-    margin: 5em;
+    margin: 5em 5em 0 5em;
   }
   .secundario {
     display: flex;
