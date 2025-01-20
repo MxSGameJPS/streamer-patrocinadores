@@ -10,7 +10,7 @@
   --cor-secundaria: #cbaa59;
   --sub-titulos: #ffffff;
   --descricao: #f9f9f9;
-  --fonte: "inter";
+  --fonte: "inter", sans-serif;
 }
 
 body {
@@ -132,4 +132,55 @@ body {
 }
 .lista__link a:hover {
   color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .principal {
+    background-image: url(/assets/mxsgamejps\ 1.png);
+    background-size: contain;
+    text-align: center;
+    margin: 5em;
+  }
+  .secundario {
+    display: flex;
+    margin: -25em 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .secundario__titulo {
+    text-align: center;
+  }
+  .container__descricao__paragrafo {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .secundario__texto {
+    text-align: center;
+    margin-left: 4em;
+  }
+  .secundario__botao {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 3.5em;
+  }
+  .dispositivos {
+    flex-direction: column;
+    margin-top: 10em;
+  }
+  .dispositivos__lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rodape__lista {
+    flex-direction: column;
+  }
 }
