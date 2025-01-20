@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #cbaa59;
+  --sub-titulos: #ffffff;
+  --descricao: #f9f9f9;
+  --fonte: "inter", sans-serif;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--sub-titulos);
+  font-family: var(--fonte);
+  font-size: 16px;
+}
+
+.principal {
+  background-image: url("/assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+.titulo {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__botao__especial {
+  text-decoration: none;
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  padding: 1em;
+  color: var(--cor-primaria);
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.container__botao {
+  text-decoration: none;
+  border: 1px solid var(--cor-secundaria);
+  padding: 1em;
+  display: block;
+  background-color: transparent;
+  border-radius: 8px;
+  color: var(--descricao);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.container__aviso {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--descricao);
+}
+.container__img {
+  margin: 1em 0 2em 0;
+}
+.container__caixa {
+  margin: 0 6em;
+}
+.secundario__img {
+  width: 80%;
+}
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+.secundario__titulo {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.1em;
+}
+.container__descricao__paragrafo {
+  color: var(--descricao);
+}
+.secundario__botao {
+  display: inline-block;
+}
+.secundario__texto {
+  margin-bottom: 1em;
+  width: 70%;
+}
+.dispositivos__lista {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.dispositivos__titulos {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+.lista__item {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.rodape {
+  text-align: center;
+  margin-top: 10em;
+}
+.rodape__lista {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+.lista__link {
+  list-style: none;
+  margin: 1em;
+}
+.link__lista {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--descricao);
+}
+.rodape__banner {
+  width: 100%;
+}
+.lista__link a:hover {
+  color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .principal {
+    background-image: url(/assets/mxsgamejps\ 1.png);
+    background-size: contain;
+    text-align: center;
+    margin: 5em;
+  }
+  .secundario {
+    display: flex;
+    margin: -35% 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .secundario__titulo {
+    text-align: center;
+  }
+  .container__descricao__paragrafo {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .secundario__texto {
+    text-align: center;
+    margin-left: 4em;
+  }
+  .secundario__botao {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 3.5em;
+  }
+  .dispositivos {
+    flex-direction: column;
+    margin-top: 10em;
+  }
+  .dispositivos__lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rodape__lista {
+    flex-direction: column;
+  }
+}
